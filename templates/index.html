@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarpaulin Course Management Tool</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tarpaulin Course Management Tool</h1>
+    </header>
+    <main>
+        <section id="loginSection">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="contentSection" style="display:none;">
+            <nav>
+                <ul>
+                    <li id="navCourses" style="display:none;"><a href="#courses"></a></li>
+                    <li id="navUsers" style="display:none;"><a href="#users"></a></li>
+                    <li id="navAvatar" style="display:none;"><a href="#userAvatar"></a></li>
+                </ul>
+            </nav>
+
+            <section id="courses" style="display:none;">
+                <h2>Courses</h2>
+                <button id="fetchCourses">Fetch Courses</button>
+                <div id="coursesList"></div>
+                <h3>Create Course</h3>
+                <form id="createCourseForm">
+                    <label for="courseTitle">Title:</label>
+                    <input type="text" id="courseTitle" name="title" required>
+                    <label for="courseSubject">Subject:</label>
+                    <input type="text" id="courseSubject" name="subject" required>
+                    <label for="courseNumber">Number:</label>
+                    <input type="number" id="courseNumber" name="number" required>
+                    <label for="courseTerm">Term:</label>
+                    <input type="text" id="courseTerm" name="term" required>
+                    <label for="instructorId">Instructor ID:</label>
+                    <input type="number" id="instructorId" name="instructor_id" required>
+                    <button type="submit">Create Course</button>
+                </form>
+            </section>
+
+            <section id="users" style="display:none;">
+                <h2>Users</h2>
+                <button id="fetchUsers">Fetch Users</button>
+                <div id="usersList"></div>
+            </section>
+
+            <section id="userAvatar" style="display:none;">
+                <h2>Update Avatar</h2>
+                <form id="updateAvatarForm">
+                    <label for="userId">User ID:</label>
+                    <input type="number" id="userId" name="user_id" required>
+                    <label for="avatarFile">Avatar:</label>
+                    <input type="file" id="avatarFile" name="file" required>
+                    <button type="submit">Update Avatar</button>
+                </form>
+            </section>
+        </section>
+    </main>
+    <script src="static/app.js"></script>
+</body>
+</html>
