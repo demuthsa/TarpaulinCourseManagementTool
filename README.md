@@ -1,4 +1,4 @@
 # TarpaulinCourseManagementTool
 
 
-![Display from admin POV]([img]https://i.imgur.com/lHEPPVJ.png[/img])
+![Display from admin POV](https://i.imgur.com/lHEPPVJ.png)
