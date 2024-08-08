@@ -4,4 +4,4 @@
 ![Display from admin POV](https://i.imgur.com/lHEPPVJ.png)
 
 
-Here is the API specification I followed to create this [here](docs/assignment6-api-doc.pdf)
+Here is a summary of all the API endpoints I created [here](docs/assignment6-api-doc.pdf)
